@@ -1,9 +1,413 @@
-<html>
- 
+<!DOCTYPE html>
+<head>
+    <title> HTML & CSS Cheatsheet</title>
+    <link rel= "stylesheet" href="resources/styles.css" type="text/css">
+</head>
 <body>
-  <h1>Kayla Carmichael</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <div class="title">
+        <h1>HTML & CSS Cheatsheet</h1>
+        <h3>By Kayla</h3>
+        <h4>kayla@kecdigital.com</h4>
+    <ul class="nav">
+        <li><a href="#introhtml" target="_self">HTML</a></li>
+        <li><a href="#introcss" target="_self">CSS</a></li>
+        <li><a href="#box-model">Box Model</a></li>
+        <li><a href="#introtable">Tables</a></li>
+        <li><a href="#tips-tricks">Tips & Tricks</a></li>
+    </ul>
+    </header>
+    <div id="introhtml"></div>
+    <h1>Intro to HTML</h1>
+    <h2>What is HTML?</h2>
+    <p class="para-introhtml-what"> HTML stands for HyperText MarkUp Language and is the standard markup language for documents designed to be displayed in a web browswer. It can be assisted by technologies such as Cascading Styles Sheets and scripting langugages such as Javascript. </p>
+    <p class="para-introhtml-code">All html documents must be first classfied with a &lt;!DOCTYPE html&gt;. Followed then by a &lt;head&gt; which would support all of the Metadata not shown on the webpage and then a &lt;body&gt; which will hold everything that displays on the homepage.</p>
+    <table class="htmltable">
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>
+                <span class="code">&lt;head&gt;</span>
+            </td>
+            <td>Head</td>
+            <td>The head element is a container for metadata (data about data) and is placed between the <html>tag and the before the <body> tag. Metadata is not displayed on the page. Metadata typically define the document title, character set, styles, scripts, and other meta information. </td>
+            </tr>
+        <tr>    
+        <td>
+            <span class="code">&lt;body&gt;</span>
+        </td>
+        <td>Body</td>
+        <td>The body element contains all the contents of an HTML document, such as headings, parapgraphs, images, hyperlinks, tables, lists, etc. <Strong>Note there can only be one body element</Strong> </td>
+        </tr>
+<tr>
+    <td>
+        <span class="code">&lt;div&gt;</span>        
+    </td>
+    <td>Div tag</td>
+    <td>The div tag defines a division or a section in an HTML document. The tag is used as a container for hTML elements which then can be styled in css through class or ids. </td>
+</tr>
+        <tr>
+    <td>
+        <span class="code">&lt;!--...--&gt;</span>
+    </td>
+    <td> Comment</td>
+    <td> Allows you to write a comment in the html script without in appearing on the webpage</td>
+    <tr>
+        <td>
+    <span class="code">&lt;h1&gt; to &lt;h6&gt;</span>
+</td>
+<td>Headings</td>
+<td> The headings in html are six levels of headings. A heading element implies all the font changes, paragraphs breaks before and after and any white space necessary to render the heading. The H1 heading is the largest and H6 is the smallest.</td>
+</tr>
+<tr>
+<td>
+    <span class="code">&lt;p&gt;</span>
+</td>
+<td>Paragraph</td>
+<td>The paragraph is as mentioned, a paragraph in html. It starts on a new line and browsers automatically add some white space (a margin) before and after a paragraph</td>
+</tr>
+<tr>
+<td>
+    <span class="code">&lt;a&gt;</span>
+</td>
+<td>Anchor</td>
+<td> The anchor element with href,creates a hyperlink to web pages, files, email addresses, locations in the same page defined with a class, or anything else a url can address.</td>
+</tr>
+<tr>
+    <td>
+        <span class="code">&lt;br&gt;</span>
+    </td>
+    <td>Break</td>
+    <td>Inserts a single line break on page. </td>
+</tr>  
+<tr>
+    <td>
+        <span class="code">&lt;em&gt;</span>
+    </td>
+    <td>Emphasize</td>
+    <td>Used to emphasize text</td>
+</tr>
+<tr>
+    <td>
+        <span class="code">&lt;img&gt;</span>
+    </td>
+    <td>Image</td>
+    <td>Image tag is used to embed an image in an HTML page. Images are not techinically inserted into a web page; images are linked to web pages. Usually to link an image the code will look like: &lt;img src="(your image url here)" alt="photo explaination for accessibly"&gt;</td>
+</tr>
+<tr>
+    <td>
+    <span class="code">&lt;figure&gt;</span>
+        </td>
+    <td>Figure</td>
+    <td>The figure tag specifies self-contained content, like illustrations, diagrams, photos, codes listings, etc. While the content of the &lt;figure&gt; element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.</td>    
+</tr>
+<tr>
+    <td>
+        <span class="code">&lt;figcaption&gt;</span>
+    </td>
+    <td>Figure caption</td>
+    <td>Figure caption represents a caption or legend decribing the rest of the contents of its parent &lt;figure&gt; element.</td>
+</tr>
+</tbody>
+</table>
+<div class="audioandvideo">
+<h3>For video code usually you would add the following: </h3>
+<p>"&lt;video width="200 height="150 controls&gt;&lt;source src=vid.mp4 type="videomp4"&gt;No video support&lt;/video&gt;</h3>
+<h3>and for audio it would look like the following</h3>
+<p>"&lt;audio controls&gt;&lt;source src="sound.ogg" type="audio/orr"&gt; No audio support&lt;/audio&gt;</p>
+</div>
+    <div id="introcss"></div>
+    <h1>Intro to CSS</h1>
+    <h2>What is CSS?</h2>
+    <p class="para-introcss">CSS is a style sheet langugage used for decribing the presentation of a document writtern in a markup language such as HTML. CSS is usually connected to HTML by adding the following &lt;link rel="stylesheet" href="./name of folder" type="text/css"&gt;into the header</p>
+    <p class="para-introcss-syntax">A css rule consist of a selector and a declaration block which could consist of property: value. An example of a CSS syntax is: h1{color:blue}.</p>
+    <table class="selectors">
+        <thead>
+            <tr>
+                <th>Selectors</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>*</td>
+                <td>All elements</td>
+                <td>Used for all elements in the webpage</td>
+            </tr>
+            <tr>
+                <td>div</td>
+                <td>all div tags</td>
+                <td>Used for all div tags on the page</td>
+            </tr>
+            <tr>
+                <td>div.p</td>
+                <td>All divs and paragraphs</td>
+                <td>Used for all divs and paragraphs </td>
+            </tr>
+            <tr>
+                <td>div p</td>
+                <td>Paragraphs inside divs</td>
+                <td>Used for paragraphs inside divs</td>
+                </tr>
+            <tr>
+                <td>div > p</td>
+                <td>All p tags, one level deep in div</td>
+                <td>All paragraph tags that are one level deep in the div</td>
+            </tr>
+            <tr>
+            <td>div + p</td>
+            <td>p tags immediately after div</td>
+            <td>For p tags immediate after the div tag</td>
+            </tr>
+            <tr>
+                <td>div ~ p</td>
+                <td>p tags preceded by div</td>
+                <td>these are p tags that are preceded by div</td>
+            </tr>
+            <tr>
+                <td>.classname</td>
+                <td>all elements with class</td>
+                <td>The are classnames that would be attached to div, p, h etc. an example would be div class="example" and in css it would be .example</td>
+            </tr>
+            <tr>
+                <td>#idname</td>
+                <td>ID Name</td>
+                <td>Element with an ID. An id can only be used once and css can not mirror multiple times.</td>  
+            </tr>
+            <tr>
+                <td colspan=3><em>See the list full list of <a href="https://www.w3schools.com/cssref/css_selectors.php">Selectors</a></em></td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="pseudoclasstable">
+        <thead>
+            <tr>
+                <th>Pseudo Class</th>
+                <th>Name</th>
+                <th>Descrption</th>
+            </tr>
+        </thead>
+<tbody>
+    <tr>
+        <td colspan =3><em>Pseudo Class is a selector that selects elements that are in a specific state, eg. they are the first element of thier type, or the are being hovered over.</em></td>
+    </tr>
+    <tr>
+        <td>a:active</td>
+        <td>Anchor:Active</td>
+        <td>Link in clicked state</td>
+    </tr>
+    <tr>
+        <td>a:hover</td>
+        <td>Anchor:Hover</td>
+        <td>Link with mouse over it</td>
+    </tr>
+    <tr>
+        <td>a:visited</td>
+        <td>Anchor:Visited</td>
+        <td>visited link</td>
+    </tr>
+    <tr>
+        <td colspan=3>See the whole list of <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo class</a></td>
+    </tr>
+</tbody>
+    </table>
+<table class="propertiestable">
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>align-content</td>
+            <td>Align Content</td>
+            <td>Behaviour of the flex-wrap property</td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>Background Colour</td>
+            <td>Background Colour of the page</td>
+        </tr>
+        <tr>
+        <td>background-image</td>
+        <td>Background Image</td>
+        <td>Image in the background page</td>
+        </tr>
+        <tr>
+            <td>background-position</td>
+            <td>Background Position</td>
+            <td>The starting position of the background image</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>Font Used</td>
+            <td>Font being used. Any font with more than two words have to be surrounded by a "" example "Times New Roman". To help with browsers fall back fonts should be added example: font-family:"Times New Roman", Times, serif </td>
+        </tr>
+        <tr>
+            <td colspan=3>There are hundreds more properties that can be added to<a href="https://www.w3schools.com/cssref/index.php">CSS</a></td>
+        </tr>
+    </tbody>
+</table>
+<div id="box-model">
+    <h3>Box Modeling</h3>
+    <p>s essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model</p>
+    <img src="resources/CSS-Box-Model.png" alt="css box model" width="1000" height="500">
+    <h3>To breakdown each meaning:</h3>
+    <ul class="box-model">
+        <li>Content: The Content of the box, where text and images appear.</li>
+        <li>Padding: Clears an area around the content. Padding is  The padding is transparent.</li>
+        <li>Border: A border that goes around the padding and content.</li>
+        <li>Margin: Clears an area outside the border. The margin is transparent.</li>
+    </ul>
+</div>
+<div class="heightandwidth">
+    <h3>Height & Width</h3>
+    <p>The height and width of properties are used to set the height and width of an element. These do not include margin, padding and borders, they set the height and width of the content inside.</p>
+</div>
+<div class="Positioning">
+    <h3>Positioning</h3>
+    <p>Position property specifies the type of positioning method used for element (static, relative, fixed, absolute or sticky). Elements are then positioned using top, bottom, left and right properties- however these properties will not work unless the position property is set first.  </p>
+<table class="Positioning">
+    <thead>
+        <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>position:static</td>
+            <td>Static</td>
+            <td>For the static position elements are not effected by the top, bottom, left, and right properties. A element with position:static; is not positioned in any special way; it is always positioned according to the normal flow of the page.</td>
+        </tr>
+        <tr>
+            <td>position:relative</td>
+            <td>Relative</td>
+            <td>An element with position:realtive is positioned relative to its normal position. Setting the top, right, bottom and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</td>
+        </tr>
+        <tr>
+            <td>position:fixed</td>
+            <td>Fixed</td>
+            <td>An element with position:fixed; is a positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom and left properties are used to position the element. A fixed element does not leave a gap in the page where it would normally have been located.</td>
+        </tr>
+        <tr>
+            <td>position:absolute</td>
+            <td>Absolute</td>
+            <td>An element with position:absolute; is positioned to the nearest positioned ancestor (instead of positioned relative to the viewport, like position:fixed). However, if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. <strong>Note</strong>Absolute positioned elements are removed from the normal flow, and can overlap elements.</td>
+        </tr>
+        <tr>
+            <td>position:sticky</td>
+            <td>Sticky</td>
+            <td>An element with position:sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it sticks in place (like position:fixed).</td>
+        </tr>
+        <tr>
+            <td>z-index:</td>
+            <td>Z Index</td>
+            <td>When elements are positioned, they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). A element can have a positive or negative stack order. Example (z-index: 6 will be in front, followed by z-index: 4, z-index:2, z-index:-1, z-index:-4, z-index:-6 behind the element) </td>
+        </tr>
+        <tr>
+            <td>overflow:</td>
+            <td>Overflow</td>
+            <td>The overflow property controls what happens to the content that is too big to fit into an area. Overflow specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area. The overflow property has the follow values: visible: default, overflow is not clipped. hidden: overflow is clipped, and the rest of the content will be invisable. Scroll: The overflow is clipped and a scrollbar is added to see the rest of the content. auto: similar to scroll but adds scrollbars only when necssary.</td>
+        </tr>
+        <tr>
+            <td>float:</td>
+            <td>Float</td>
+            <td>The float property is used for positioning and formatting content eg let an image float left to the text in a container.</td>
+        </tr>
+        <tr>
+            <td>display:inline</td>
+            <td>Inline</td>
+            <td>Displays an element as an inline element (like&lt;span&gt;). Any height and width properties will have no effect.</td>
+        </tr>
+        <tr>display:inline-block</tr>
+        <tr>Inline-Block</tr>
+        <tr>Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.</tr>
+    </tbody>
+</table>
+</div>
+    <div id="introtable"></div>
+    <h3>Tables</h3>
+    <table>
+                <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>&lt;table&gt;</td>
+            <td>Table</td>
+            <td>The wrapper element for all HTML tables.</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>Table Header</td>
+                <td>The set of rows defining the column headers in the table </td>
+            </tr>
+            <tr>
+                <td>&lt;tr&&gt;</td>
+                <td>Table rows</td>
+                <td>The table row container. This usually wraps &lt;th&gt; and &lt;td&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>Table Body</td>
+                <td> The set of rows containing actual table data.</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Table Data </td>
+                <td>The table data to fill in the row container</td>
+            </tr>
+            <tr>
+                <td>&lt;tfoot&gt;</td>
+                <td>Table Foot</td>
+                <td>The set of rows defining the footer in a table</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Table Attributes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;colspan&gt;</td>
+                <td>Column Span</td>
+                <td>Defines how many columns a td element shoud span</td>
+            </tr>
+            <tr>
+                <td colspan=3><em>Example: &lt;td colspan=3&gt;</em></td>
+            </tr>
+            <tr>
+                <td>&lt;rowspan&gt;</td>
+                <td>Row Span</td>
+                <td>Defines how many rows a td element should span</td>
+            </tr>
+            <tr>
+                <td rowspan=3><em>Example:&lt;td rowspan=2&gt;</em></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="tips-tricks"></div>
+    <h3>Tips & Tricks</h3>
+    <h4>Helpful resources for HTML: <a href="https://www.w3schools.com/html/default.asp">HTML Help Guide</a></h4>
+    <h4>Helpful resources for CSS: <a href="https://www.w3schools.com/css/default.asp">CSS Help Guide</a></h4>
 </body>
- 
-</html>

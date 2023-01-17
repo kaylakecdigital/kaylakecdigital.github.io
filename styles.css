@@ -1,0 +1,95 @@
+body {
+  background-color: #fff1d6;
+}
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #585858;
+}
+nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 24px;
+}
+a {
+  color: #acd3ca;
+}
+li,
+a:hover {
+  color: #c5edec;
+}
+p.para-introhtml-code {
+  font-weight: lighter;
+  text-align: left;
+  padding: 125px auto;
+}
+p.para-introhtml-what {
+  font-weight: lighter;
+  text-align: justify;
+}
+table {
+  border: #585858 2px solid;
+  width: 1200px;
+  margin: 0 auto;
+  text-algin: center;
+  font-weight: lighter;
+  border-spacing: 2px;
+  background-color: #acd3ca;
+  opacity: 0.9;
+  box-shadow: 0 2px 2px 0 #585858;
+}
+thead {
+  border: #585858 2px solid;
+  font-weight: bold;
+}
+tbody {
+  border: #585858 1px solid;
+  padding: 1px;
+  display: table-row-group;
+  vertical-align: middle;
+}
+
+td {
+  display: table-cell;
+  border-top: 1px #585858 solid;
+}
+.audioandvideo {
+  padding: 1px;
+  margin: 0 auto;
+  font-weight: lighter;
+  border: #585858 1px solid;
+  width: 1200px;
+  background-color: #acd3ca;
+  opacity: 0.9;
+  text-align: left;
+  box-shadow: 0 2px 2px 0 #585858;
+}
+p.para-introcss{
+  font-weight: lighter;
+  text-align: left;
+}
+.selectors a,
+.pseudoclasstable a,
+.propertiestable a{
+    color:#585858;
+}
+p.box-model{
+    font-size:16px;
+    font-weight:bold;
+}
+ul.box-model{
+    text-align:left;
+    color:#585858;
+}
+.box-model li{
+    color:#585858;
+    list-style-type: square;
+    list-style-position: inside;
+}
